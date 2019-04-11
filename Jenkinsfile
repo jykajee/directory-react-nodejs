@@ -6,9 +6,9 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('tests skipped') {
+    stage('tests ') {
       steps {
-        sh 'node test'
+        sh 'npm test'
       }
     }
     stage('node server') {
