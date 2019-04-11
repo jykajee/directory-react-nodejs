@@ -16,7 +16,7 @@ var SearchBar = React.createClass({
     render: function () {
         return (
             <div className="bar bar-standard bar-header-secondary">
-                <input type="search" ref="searchKey" onChange={this.searchHandler} value={this.props.searchKey}/>
+                <input type="search" ref="searchKey" placeholder="Write here, poopypants" onChange={this.searchHandler} value={this.props.searchKey}/>
             </div>
 
         );
@@ -28,7 +28,7 @@ var EmployeeListItem = React.createClass({
         return (
             <li className="table-view-cell media">
                 <a href={"#employees/" + this.props.employee.id}>
-                    <img className="media-object small pull-left" src={"pics/" + this.props.employee.firstName + "_" + this.props.employee.lastName + ".jpg" }/>
+                    <img className="media-object small pull-left" src="https://www.fillmurray.com/100/100"/>
                     {this.props.employee.firstName} {this.props.employee.lastName}
                     <p>{this.props.employee.title}</p>
                 </a>
